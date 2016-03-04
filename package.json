@@ -1,42 +1,49 @@
 {
   "name": "playground",
-  "version": "1.0.0",
-  "description": "playground React component",
+  "version": "0.0.1",
+  "description": "React wrapper for swiperjs",
   "main": "lib/index.js",
+  
   "jsnext:main": "es6/index.js",
+
   "files": [
     "css",
     "es6",
     "lib",
     "umd"
   ],
+
   "scripts": {
     "build": "nwb build",
     "clean": "nwb clean",
-    "start": "nwb serve",
-    "test": "nwb test",
-    "test:watch": "nwb test --server"
+    "start": "nwb serve"
   },
+
   "dependencies": {
-    "classnames": "^2.2.3",
-    "csjs": "^1.0.0",
-    "csjs-inject": "^1.0.0",
-    "faker": "^3.0.1",
     "swiper": "^3.3.1"
   },
+
   "peerDependencies": {
     "react": "0.14.x"
   },
+
   "devDependencies": {
     "nwb": "0.8.x",
     "react": "0.14.x",
     "react-dom": "0.14.x"
   },
-  "author": "",
-  "homepage": "",
+
+  "author": "sonhanguyen@outlook.com",
+
   "license": "MIT",
-  "repository": "",
+
   "keywords": [
-    "react-component"
+    "react-component",
+    "react",
+    "swipe",
+    "swiper",
+    "swiperjs",
+    "view-pager",
+    "viewpager"
   ]
 }

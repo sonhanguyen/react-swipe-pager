@@ -1,15 +1,27 @@
 import React from 'react'
-import {render} from 'react-dom'
+import { render } from 'react-dom'
 
-import Component from '../../src'
+import AutoPager from '../../src'
 
-let Demo = React.createClass({
-  render() {
-    return <div>
-      <h1>playground Demo</h1>
-      <Component/>
-    </div>
-  }
-})
+render(
+  <AutoPager direction='vertical'
+    style={{
+      width: '100%',
+      height: '90vh',
+    }}>{ Array(137).fill(
+      <Item size={40} />
+    )}
+  </AutoPager>
+, document.querySelector('#demo'))
 
-render(<Demo/>, document.querySelector('#demo'))
+function Item ({ size }) {
+  return <div style = {
+    {
+      borderRadius: '50%',
+      height: size,
+      width: size,
+      backgroundColor: 'red',
+      margin: 60
+    }
+  }/>
+}
