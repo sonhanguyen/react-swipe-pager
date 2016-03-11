@@ -1,0 +1,15 @@
+:local(.item) { display: inline-block }
+
+:local(.center) {
+  display: flex;
+  justify-content: center;
+}
+
+:local(.row) { composes: center }
+
+:local(.slide) {
+  composes: center;
+  flex-direction: column;
+}
+
+.swiper-container { height: 100% }
